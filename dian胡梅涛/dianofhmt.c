@@ -70,11 +70,11 @@ const int maxload=4;
 
  int main(){
  while (press==1){
-	 printf("ÄãÏÖÔÚËùÔÚÂ¥²ã");
+	 printf("ä½ ç°åœ¨æ‰€åœ¨æ¥¼å±‚");
  	 scanf("%d",&pos);
- 	 printf("ÄãµÄÄ¿µÄµØËùÔÚÂ¥²ã");
+ 	 printf("ä½ çš„ç›®çš„åœ°æ‰€åœ¨æ¥¼å±‚");
 	 scanf("%d",&des); 
- 	 printf("»¹ÓĞÈËÇë°´1·ñÔò°´0");
+ 	 printf("è¿˜æœ‰äººè¯·æŒ‰1å¦åˆ™æŒ‰0");
  	 scanf("%d",&press);
  	 waitfloor[pos-1]++;
  	 waitdes[pos-1][des-1]++;}
@@ -87,9 +87,11 @@ const int maxload=4;
 		if (directjudge(lift)==0){
 			lift++;
 		}
-    	printf("ÄãÏÖÔÚÕıÔÚ%d",lift);
+    	printf("ä½ ç°åœ¨æ­£åœ¨%d",lift);
     	waittime=waittime+load;
     	judgework(lift);
+	printf("ç”µæ¢¯å†…çš„äººä¸º%d",load);
+	printf("ç­‰å¾…çš„æ—¶é—´ä¸º%d",waittime)
     	
     	
     	
